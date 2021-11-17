@@ -17,6 +17,6 @@ class ApplicationController < ActionController::Base
 
     def require_no_user!
         #has to be defined
-        redirect_to goals_url if !current_user.nil?
+        redirect_to users_url if !current_user.nil?
     end
 end
